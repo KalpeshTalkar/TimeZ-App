@@ -38,20 +38,22 @@
         }
         
         .sticky {
-            position: fixed;
+            position: sticky;
             top: 0;
             width: 100%;
+            z-index: 100;
         }
         
         .navbar {
             width: 100%;
-            position: fixed;
+            position: absolute;
             top: 0;
+            border-top: 0;
             overflow: hidden;
             float: right;
-            right: 0;
-            padding-right: 50px;
+            padding-right: 30px;
             background-color: white;
+            z-index: 100;
         }
         
         .navbar a {
@@ -74,18 +76,15 @@
     <link rel="shortcut icon" href="./images/app-icon-small.png">
     <link rel="icon" href="./images/app-icon-small.png">
 
-
-    <meta property="og:url" content="https://kalpeshtalkar.github.io/TimeZ">
+    <meta property="og:url" content="https://kalpeshtalkar.github.io/TimeZ-App/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="TimeZ">
     <meta property="og:description" content="Time at your fingertips.">
     <meta property="og:locale" content="en_IN">
     <meta property="og:site_name" content="TimeZ">
-    <meta property="og:image" content="./images/app-icon">
-    <meta property="og:image:secure_url" content="https://cdn.bizanalyst.in/assets/img/mini-features/dashboard-android.png">
+    <meta property="og:image" content="https://github.com/KalpeshTalkar/TimeZ-App/blob/master/images/app-icon-small.png">
+    <meta property="og:image:secure_url" content="https://github.com/KalpeshTalkar/TimeZ-App/blob/master/images/app-icon-small.png">
     <meta property="og:image:type" content="image/png">
-    <!--<meta property="og:image:width" content="344">-->
-    <!--<meta property="og:image:height" content="500">-->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -102,9 +101,13 @@
 
     <!-- Menu -->
     <div id="nav" class="navbar">
-        <a href="#contact">Contact</a>
-        <a href="#features">Features</a>
-        <a href="#">Home</a>
+        <nav>
+            <a href="./terms.html">Terms & Conditions</a>
+            <a href="./privacy-policy.html">Privacy Policy</a>
+            <a href="#contact">Contact</a>
+            <a href="#features">Features</a>
+            <a href="#">Home</a>
+        </nav>
     </div>
 
     <!-- Banner -->
@@ -113,7 +116,7 @@
             <img alt="..." src="./images/app-icon.png" style="width: 100px; height: auto; border-radius: 20px;">
             <p style="font-size: 4em; margin-top: 20px;">TimeZ</p>
             <p style="font-size: 2em;">Time at your fingertips</p>
-            <a href="https://itunes.apple.com"><img alt="..." src="./images/app-store.png" style="width: 200px; height: auto;"></a>
+            <!-- <a href="https://itunes.apple.com/TimeZ-The-World-Clock"><img alt="..." src="./images/app-store.png" style="width: 200px; height: auto;"></a> -->
         </div>
         <div class="box">
             <img alt=" ... " src="./images/all-devices.png ">
@@ -129,7 +132,7 @@
                 <div class="col-sm-5 left ">
                     <div class="__card ">
                         <div class="_card-body ">
-                            <img alt="... " class="lazyload " src="./images/day-night-landscapes.png " style="width:auto; height:500px; float:right ">
+                            <img alt="... " class="lazyload " src="./images/day-night-landscapes.png " style="width:auto; height:400px; float:right ">
                         </div>
                     </div>
                 </div>
@@ -171,7 +174,7 @@
                 <div class="col-sm-5 left _col-2 ">
                     <div class="__card ">
                         <div class="_card-body ">
-                            <img alt="... " class="lazyload " src="./images/time-controls.png " style="width:auto; height:500px ">
+                            <img alt="... " class="lazyload " src="./images/time-controls.png " style="width:auto; height:400px ">
                         </div>
                     </div>
                 </div>
@@ -183,7 +186,7 @@
                 <div class="col-sm-5 img-hover left ">
                     <div class="__card ">
                         <div class="_card-body ">
-                            <img alt="... " class="lazyload " src="./images/cities.png " style="width:auto; height:500px; float:right ">
+                            <img alt="... " class="lazyload " src="./images/cities.png " style="width:auto; height:400px; float:right ">
                         </div>
                     </div>
                 </div>
@@ -225,7 +228,7 @@
                 <div class="col-sm-5 left _col-2 ">
                     <div class="__card ">
                         <div class="_card-body ">
-                            <img alt="... " class="lazyload " src="./images/reorder.png " style="width:auto; height:500px; ">
+                            <img alt="... " class="lazyload " src="./images/reorder.png " style="width:auto; height:400px; ">
                         </div>
                     </div>
                 </div>
@@ -237,7 +240,7 @@
                 <div class="col-sm-5 img-hover left ">
                     <div class="__card ">
                         <div class="_card-body ">
-                            <img alt="... " class="lazyload " src="./images/dark-mode.png " style="width:auto; height:500px; float:right ">
+                            <img alt="... " class="lazyload " src="./images/dark-mode.png " style="width:auto; height:400px; float:right ">
                         </div>
                     </div>
                 </div>
@@ -272,7 +275,7 @@
                 <div class="col-sm-5 left _col-2 ">
                     <div class="__card ">
                         <div class="_card-body ">
-                            <img alt="... " class="lazyload " src="./images/widgets.png " style="width:auto; height:500px; ">
+                            <img alt="... " class="lazyload " src="./images/widgets.png " style="width:auto; height:400px; ">
                         </div>
                     </div>
                 </div>
@@ -284,7 +287,7 @@
                 <div class="col-sm-5 img-hover left ">
                     <div class="__card ">
                         <div class="_card-body ">
-                            <img alt="... " class="lazyload " src="./images/all-devices.png " style="width:auto; height:500px; float:right ">
+                            <img alt="... " class="lazyload " src="./images/all-devices.png " style="width:auto; height:400px; float:right ">
                         </div>
                     </div>
                 </div>
@@ -303,7 +306,7 @@
         </div> -->
 
         <!-- Contact -->
-        <div id="contact" class="centerText" style="padding: 50px;">
+        <div id="contact" class="centerText">
             <h1>Contact</h1>
             <div style="font-size: 1.5em; ">
                 <!-- Photo -->
@@ -324,24 +327,25 @@
                 <a href="https://instagram.com/kalpeshtalkar" target="_blank"><img src="./images/ic_instagram.png" alt="Instagram Profile" style="width: 40px; height: auto"></a>
                 &nbsp;
                 <a href="https://facebook.com/kalpesh.talkar" target="_blank"><img src="./images/ic_facebook.png" alt="Facebook Profile" style="width: 40px; height: auto"></a>
-
-                </br>
-                </br>
-
-                <!-- By me a coffee -->
-                <a href="https://www.buymeacoffee.com/kalpesh" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important; border-radius:4px;"></a>
-
                 </br>
                 </br>
             </div>
         </div>
 
+        <div class="centerText">
+            <!-- By me a coffee -->
+            <a href="https://www.buymeacoffee.com/kalpesh" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important; border-radius:4px;"></a>
+            </br>
+            </br>
+            </br>
+        </div>
+
         <!-- Footer -->
-        <div class="centerText ">
+        <div class="centerText">
             <p>Copyright © 2020 Kalpesh Talkar. All rights reserved.</p>
         </div>
 
-        <script>
+        <!-- <script>
             window.onscroll = function() {
                 myFunction()
             };
@@ -356,7 +360,7 @@
                     header.classList.remove("sticky");
                 }
             }
-        </script>
+        </script> -->
 
         <script type="text/javascript ">
             // Lazy Loading Code
