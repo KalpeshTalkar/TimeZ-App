@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        * {
+            font-family: Helvetica !important;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .box {
+            display: inline-block;
+        }
+        
+        .wrapper {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 8%;
+        }
+        
+        .centerText {
+            text-align: center;
+        }
+        
+        .feature-title {
+            font-size: 2em;
+        }
+        
+        .feature-dec-col {
+            font-size: 1em;
+            text-align: left;
+        }
+
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+    
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            overflow: hidden;
+            float: right;
+            right: 0;
+            padding-right: 50px;
+            background-color: white;
+        }
+        
+        .navbar a {
+            float: right;
+            display: block;
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+        }
+        
+    </style>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TimeZ</title>
+    <meta name="description" content="Time at your fingertips.">
+    <meta name="keywords" content="ios,macOS,macOS app,ios app,world clock,time zones,timezones,clock,world time,kalpesh talkar,kalpesh,world clock mobile application,time zones mobile application,clock mobile application">
+
+    <link rel="shortcut icon" href="./images/app-icon-small.png">
+    <link rel="icon" href="./images/app-icon-small.png">
+
+
+    <meta property="og:url" content="https://kalpeshtalkar.github.io/TimeZ">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TimeZ">
+    <meta property="og:description" content="Time at your fingertips.">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="TimeZ">
+    <meta property="og:image" content="./images/app-icon">
+    <meta property="og:image:secure_url" content="https://cdn.bizanalyst.in/assets/img/mini-features/dashboard-android.png">
+    <meta property="og:image:type" content="image/png">
+    <!--<meta property="og:image:width" content="344">-->
+    <!--<meta property="og:image:height" content="500">-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="./css" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link href="./aos.css" rel="stylesheet">
+    <link type="text/css" href="./home.css" rel="stylesheet" media="all">
+
+    <script src="./aos.js" type="text/javascript"></script>
+
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="500" data-aos-delay="0" class="">
+
+    <!-- Menu -->
+    <div id="nav" class="navbar">
+        <a href="#contact">Contact</a>
+        <a href="#features">Features</a>
+        <a href="#">Home</a>
+    </div>
+
+    <!-- Banner -->
+    <div id="home" class="wrapper">
+        <div class="box" style="text-align: left; padding-top: 20px; padding-bottom: 20px;">
+            <img alt="..." src="./images/app-icon.png" style="width: 100px; height: auto; border-radius: 20px;">
+            <p style="font-size: 4em; margin-top: 20px;">TimeZ</p>
+            <p style="font-size: 2em;">Time at your fingertips</p>
+            <a href="https://itunes.apple.com"><img alt="..." src="./images/app-store.png" style="width: 200px; height: auto;"></a>
+        </div>
+        <div class="box">
+            <img alt=" ... " src="./images/all-devices.png ">
+        </div>
+    </div>
+
+    <!-- Features -->
+    <!-- Image - Content -->
+    <div id="features" class="centerText" style="padding: 50px;">
+        <h1>Features</h1>
+        <div data-aos="fade-up" class="row feature aos-init ">
+            <div class="container __vertical ">
+                <div class="col-sm-5 left ">
+                    <div class="__card ">
+                        <div class="_card-body ">
+                            <img alt="... " class="lazyload " src="./images/day-night-landscapes.png " style="width:auto; height:500px; float:right ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 right ">
+                    <div class="__card ">
+                        <div class="__card-body ">
+                            <h3 class="feature-title ">World Time with day and night landscapes</h3>
+                            <div class="feature-dec-col ">
+                                <span class="dot "></span>
+                                <p class="feature-desc-text ">Add cities from different countries and time zones and know the exact time.</p>
+                            </div>
+                            <div class="feature-dec-col ">
+                                <span class="dot "></span>
+                                <p class="feature-desc-text ">A minimal Day and Night background tells you if it's a day or night in the city so that you can plan your calls/meetings accordingly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content - Image -->
+        <div data-aos="fade-up" class="row feature alt aos-init ">
+            <div class="container __vertical ">
+                <div class="col-sm-7 right alt ">
+                    <div class="__card ">
+                        <div class="__card-body ">
+                            <h3 class="feature-title ">Time at your fingertips</h3>
+                            <div class="feature-dec-col ">
+                                <span class="dot "></span>
+                                <p class="feature-desc-text ">Change the current time using the sliders and know the respective time in your favourite cities. TimeZ does the time difference calculations for you.</p>
+                            </div>
+                            <div class="feature-dec-col ">
+                                <span class="dot "></span>
+                                <p class="feature-desc-text ">Easily switch between the 12-Hour and 24-Hour time format using the time format switch control.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 left _col-2 ">
+                    <div class="__card ">
+                        <div class="_card-body ">
+                            <img alt="... " class="lazyload " src="./images/time-controls.png " style="width:auto; height:500px ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Image - Content -->
+        <div data-aos="fade-up" class="row feature aos-init ">
+            <div class="container __vertical ">
+                <div class="col-sm-5 img-hover left ">
+                    <div class="__card ">
+                        <div class="_card-body ">
+                            <img alt="... " class="lazyload " src="./images/cities.png " style="width:auto; height:500px; float:right ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 right ">
+                    <div class="__card ">
+                        <div class="__card-body ">
+                            <h3 class="feature-title ">Over 7000+ cities supported</h3>
+                            <div class="feature-dec-col ">
+                                <span class="dot "></span>
+                                <p class="feature-desc-text ">Choose and add your favourite cities where your loved ones, your clients, or your employees are.</p>
+                            </div>
+                            <div class="feature-dec-col ">
+                                <span class="dot "></span>
+                                <p class="feature-desc-text ">Quickly find the city you are looking for by using the search option. You can search by city, time zone, province or country.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content - Image -->
+        <div data-aos="fade-up" class="row feature alt aos-init ">
+            <div class="container __vertical ">
+                <div class="col-sm-7 right alt ">
+                    <div class="__card ">
+                        <div class="__card-body ">
+                            <h3 class="feature-title ">Reorder cities as per your preference.</h3>
+                            <div class="feature-dec-col ">
+                                <span class="dot "></span>
+                                <p class="feature-desc-text ">Wish to see the cities you added in your custom sequence? You can do that by simple Drag and Drop.</p>
+                            </div>
+                            <div class="feature-dec-col ">
+                                <span class="dot "></span>
+                                <p class="feature-desc-text ">On iPhone or iPad, long-press on a city and drag to reorder. On Mac, simply drag a city to reorder.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 left _col-2 ">
+                    <div class="__card ">
+                        <div class="_card-body ">
+                            <img alt="... " class="lazyload " src="./images/reorder.png " style="width:auto; height:500px; ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Image - Content -->
+        <div data-aos="fade-up" class="row feature aos-init ">
+            <div class="container __vertical ">
+                <div class="col-sm-5 img-hover left ">
+                    <div class="__card ">
+                        <div class="_card-body ">
+                            <img alt="... " class="lazyload " src="./images/dark-mode.png " style="width:auto; height:500px; float:right ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 right last ">
+                    <div class="__card ">
+                        <div class="__card-body ">
+                            <h3 class="feature-title ">Supports dark mode.</h3>
+                            <div class="feature-dec-col ">
+                                <span class="dot "></span>
+                                <p class="feature-desc-text ">Wish to see the app in dark mode or light mode? The app supports dark and light modes and automatically changes with the system settings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content - Image -->
+        <div data-aos="fade-up" class="row feature alt aos-init ">
+            <div class="container __vertical ">
+                <div class="col-sm-7 right alt ">
+                    <div class="__card ">
+                        <div class="__card-body ">
+                            <h3 class="feature-title ">Widgets</h3>
+                            <div class="feature-dec-col ">
+                                <span class="dot "></span>
+                                <p class="feature-desc-text ">Quckly have a glance at the time of your favourite cities without opening the app.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 left _col-2 ">
+                    <div class="__card ">
+                        <div class="_card-body ">
+                            <img alt="... " class="lazyload " src="./images/widgets.png " style="width:auto; height:500px; ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Image - Content -->
+        <!-- <div data-aos="fade-up" class="row feature aos-init ">
+            <div class="container __vertical ">
+                <div class="col-sm-5 img-hover left ">
+                    <div class="__card ">
+                        <div class="_card-body ">
+                            <img alt="... " class="lazyload " src="./images/all-devices.png " style="width:auto; height:500px; float:right ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 right last ">
+                    <div class="__card ">
+                        <div class="__card-body ">
+                            <h3 class="feature-title ">Supports macOS</h3>
+                            <div class="feature-dec-col ">
+                                <span class="dot "></span>
+                                <p class="feature-desc-text ">This app supports on iPhone, iPad, and macOS devices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Contact -->
+        <div id="contact" class="centerText" style="padding: 50px;">
+            <h1>Contact</h1>
+            <div style="font-size: 1.5em; ">
+                <!-- Photo -->
+                <img alt="... " src="./images/kalpesh-talkar.png " style="width: 80px; height: auto; border-radius: 40px; margin: 20px; ">
+
+                <!-- Info and contact details -->
+                <p>This application is developed by Kalpesh Talkar.</p>
+                <p style="font-size:19px;">Website: <a href="https://kalpeshtalkar.github.io/Website" target="_blank">kalpeshtalkar.github.io</a>
+                </br>
+                Email: <a href="mailto:kalpeshtalkar@gmail.com" target="_blank">kalpeshtalkar@gmail.com</a>
+                </p>
+                
+                <!-- Social Links -->
+                <a href="https://www.linkedin.com/in/kalpesh-talkar-3b6a34106/" target="_blank"><img src="./images/ic_linkedin.png" alt="LinkedIn Profile" style="width: 40px; height: auto"></a>
+                &nbsp;
+                <a href="https://twitter.com/kalpeshtalkar" target="_blank"><img src="./images/ic_twitter.png" alt="Twitter Profile" style="width: 40px; height: auto"></a>
+                &nbsp;
+                <a href="https://instagram.com/kalpeshtalkar" target="_blank"><img src="./images/ic_instagram.png" alt="Instagram Profile" style="width: 40px; height: auto"></a>
+                &nbsp;
+                <a href="https://facebook.com/kalpesh.talkar" target="_blank"><img src="./images/ic_facebook.png" alt="Facebook Profile" style="width: 40px; height: auto"></a>
+                
+                </br></br>
+                
+                <!-- By me a coffee -->
+                <a href="https://www.buymeacoffee.com/kalpesh" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important; border-radius:4px;"></a>
+                
+                </br>
+                </br>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="centerText ">
+            <p>Copyright © 2020 Kalpesh Talkar. All rights reserved.</p>
+        </div>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("nav");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <script type="text/javascript ">
+            // Lazy Loading Code
+            window.addEventListener("scroll ", function() {
+                onScrollDiv()
+            });
+            window.addEventListener("DOMContentLoaded ", function() {
+                onScrollDiv()
+            });
+
+            function onScrollDiv() {
+                var images = document.querySelectorAll('.lazyload');
+                for (var i = 0, nb = images.length; i < nb; i++) {
+                    var img = images[i]
+                    var rect = img.getBoundingClientRect();
+                    var isVisible = ((rect.top - window.innerHeight) < 500 && (rect.bottom) > -50) ? true : false;
+
+                    if (isVisible) {
+                        if (!img.src) {
+                            img.src = img.dataset.src;
+                        }
+                    }
+                }
+            }
+
+            AOS.init({
+                duration: 800,
+            })
+        </script>
+
+</body>
+
+</html>
